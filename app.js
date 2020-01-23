@@ -31,7 +31,7 @@ var get = function(url) {
 };
 
 
-get('https://api.nasa.gov/planetary/earth/imagery?api_key=fWfSMcDzyHfMuH3BW6jiIUBYaj3hKRyKBRTBqgEQ')
+get('https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg')
     .then(function(response) {
         console.log("Success", response);
         document.getElementsByClassName('targetImage')[0].src = response.url;
