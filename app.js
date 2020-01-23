@@ -31,10 +31,10 @@ var get = function(url) {
 };
 
 
-get('https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg')
+get('https://pixabay.com/api/?key=15014345-5ed027ae166a17d51ad35e76d&q=yellow+flowers&image_type=photo&pretty=true')
     .then(function(response) {
         console.log("Success", response);
-        document.getElementsByClassName('targetImage')[0].src = response.url;
+        document.getElementsByClassName('targetImage')[0] = response.url;
     })
     .catch(function(err) {
         console.log("Error", err);
