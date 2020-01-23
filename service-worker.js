@@ -6,6 +6,6 @@ self.addEventListener('activate', function(e){
     console.log("[ServiceWorker] Activated")
 })
 
-ServiceUIFrameContext.addEventListener('fetch', function(e){
+self.addEventListener('fetch', function(e){
     console.log("[ServiceWorker] Fetching", e.request.url);
 })
