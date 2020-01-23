@@ -31,7 +31,7 @@ var get = function(url) {
 };
 
 
-get('https//api.nasa.gov/planetary/earth/imagery?api_key=fWfSMcDzyHfMuH3BW6jiIUBYaj3hKRyKBRTBqgEQ')
+get('https://api.nasa.gov/planetary/earth/imagery?api_key=fWfSMcDzyHfMuH3BW6jiIUBYaj3hKRyKBRTBqgEQ')
     .then(function(response) {
         console.log("Success", response);
         document.getElementsByClassName('targetImage')[0].src = response.url;
