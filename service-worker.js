@@ -14,13 +14,24 @@ self.addEventListener('install', function(e){
     e.waitUntil(
         caches.open(cacheName).then(function(cache){
             console.log("[Service] Caching cacheFiles");
-            return cache.addAll(cacheFIles);
+            return cache.addAll(cacheFiles);
         })
     )
 })
 
 self.addEventListener('activate', function(e){
     console.log("[ServiceWorker] Activated")
+
+    e.waitUntil(
+        caches.keys().then(function(cachesNames) {
+            return Promise.all(cachesNames.map(function(thisCacheName){
+                if (thisCacheName !== cacheName) {
+                    console.log("[ServiceWorker] Removing Cached Files from", thisCacheName);
+                    return caches.delete(thisCacheName);
+                }
+            }))
+        })
+    )
 })
 
 self.addEventListener('fetch', function(e){
