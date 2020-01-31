@@ -31,7 +31,7 @@ var get = function(url) {
 };
 
 
-get('https://https://pixabay.com/en/blossom-bloom-flower-195893/api/?key=15014345-5ed027ae166a17d51ad35e76d&q=yellow+flowers&id=195893&image_type=photo&pretty=true')
+get('https://pixabay.com/en/blossom-bloom-flower-195893/api/?key=15014345-5ed027ae166a17d51ad35e76d&q=yellow+flowers&id=195893&image_type=photo&pretty=true')
     .then(function(response) {
         console.log("Success", response);
         document.getElementsByClassName("targetImage") = response.url;
