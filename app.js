@@ -31,7 +31,7 @@ var get = function(url) {
 };
 
 
-get("./data/img/coconutty.jpg")
+get("/data/img/icons/icon-168.png")
     .then(function(response) {
         console.log("Success", response);
         document.getElementsByClassName("targetImage") = response.url;
