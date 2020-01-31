@@ -31,7 +31,7 @@ var get = function(url) {
 };
 
 
-get('https://cdn.pixabay.com/photo/2019/07/19/16/20/seagull-4349143_960_720.jpg')
+get("../images/122d88ab43a0791f53f91647a36ea742.jpg")
     .then(function(response) {
         console.log("Success", response);
         document.getElementsByClassName("targetImage") = response.url;
