@@ -31,7 +31,7 @@ var get = function(url) {
 };
 
 
-get('https://pixabay.com/en/blossom-bloom-flower-195893/api/?key=15014345-5ed027ae166a17d51ad35e76d&q=yellow+flowers&id=195893&image_type=photo&pretty=true')
+get('https://cdn.pixabay.com/photo/2019/07/19/16/20/seagull-4349143_960_720.jpg')
     .then(function(response) {
         console.log("Success", response);
         document.getElementsByClassName("targetImage") = response.url;
