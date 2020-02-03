@@ -17,7 +17,7 @@ var get = function(url) {
         xhr.onreadystatechange = function() {
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 if (xhr.status === 200) {
-                    var result = xhr.responseText;
+                    var result = xhr.responseText
                     result = JSON.parse(result);
                     resolve(result);
                 } else {
@@ -31,7 +31,7 @@ var get = function(url) {
 };
 
 
-get("data/img/icons/icon-168.png")
+get("../data/img/icons/icon-168.png")
     .then(function(response) {
         console.log("Success", response);
         document.getElementsByClassName("targetImage").src = response.url;
