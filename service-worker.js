@@ -1,11 +1,11 @@
 var cacheName = 'v2';
 var cacheFiles = [
-    '/',
-    '/index.html',
-    '/app.js ',
-    '/service-worker.js',
-    '/manifest.json',
-    '/data/img/a-snake.jpg'
+    '../Lab4-PWA.ServiceWorker/',
+    '../Lab4-PWA.ServiceWorker/index.html',
+    '../Lab4-PWA.ServiceWorker/app.js ',
+    '../Lab4-PWA.ServiceWorker/service-worker.js',
+    '../Lab4-PWA.ServiceWorker/manifest.json',
+    '../Lab4-PWA.ServiceWorker/data/img/a-snake.jpg'
 ]
 
 
