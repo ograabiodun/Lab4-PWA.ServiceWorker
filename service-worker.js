@@ -37,13 +37,10 @@ self.addEventListener('activate', function(e){
 
 self.addEventListener('fetch', function(e){
     e.respondWith(
-        cashes.match(e.request).then(function(response) {
-            if (response) {
-                return response;
-            }
-            return fetch(e.request);
+        cashes.match(e.request).then(cacheRes => {
+            return cacheRes || fetch(e.request);
         })
-    )
+    );
     // console.log("[ServiceWorker] Fetching", e.request.url);
 
     // e.respondWith(
@@ -56,4 +53,4 @@ self.addEventListener('fetch', function(e){
     //         return fetch(e.request);
     //     })
     // )
-})
+});
