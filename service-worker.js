@@ -37,7 +37,7 @@ self.addEventListener('activate', function(e){
 
 self.addEventListener('fetch', function(e){
     e.respondWith(
-        cashes.match(e.request).then(cacheRes => {
+        caches.match(e.request).then(cacheRes => {
             return cacheRes || fetch(e.request);
         })
     );
