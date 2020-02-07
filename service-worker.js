@@ -5,6 +5,7 @@ var cacheFiles = [
     '../Lab4-PWA.ServiceWorker/app.js ',
     '../Lab4-PWA.ServiceWorker/service-worker.js',
     '../Lab4-PWA.ServiceWorker/manifest.json',
+    '../Lab4-PWA.ServiceWorker/main.css',
     '../Lab4-PWA.ServiceWorker/data/img/a-snake.jpg'
 ]
 
