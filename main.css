@@ -1,0 +1,299 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #logo {
+      width: 100px;
+    }
+  
+    .wrapper{
+      color: black;
+      max-width: 900px;
+      width: 100%;
+      height: 100vh;
+      margin: 80px auto 0;
+      padding: 10px;
+  }
+  
+  .wrapper h1{
+      font-size: 48px;
+      letter-spacing: 5px;
+      text-align: center;
+      text-transform: uppercase;
+  }
+  
+  .wrapper p{
+      text-align: center;
+  }
+  
+  .wrapper .contactus{
+      margin: 50px 0 0;
+  }
+  
+  .wrapper .contactus .input_wrapper{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  }
+  
+  .wrapper .contactus .input_wrapper .input_item{
+      width: 48%;
+      position: relative;
+  }
+  
+  .wrapper .contactus .input_item input[type="text"],
+  .wrapper .contactus textarea{
+      width: 100%;
+      border: 0;
+      padding: 10px;
+      padding-left: 40px;
+      border-radius: 3px;
+  }
+  
+  .wrapper .contactus .message_wrapper{
+      position: relative;
+  }
+  
+  .wrapper .contactus .message_wrapper textarea{
+      height: auto;
+      resize: none;
+  }
+  
+  .wrapper .contactus .btn{
+      width: 100%;
+      background: #00aced;
+      margin: auto ;
+      text-align: center;
+      padding: 10px;
+      border-radius: 3px;
+  }
+  
+  .wrapper .contactus .btn a{
+      color: #fff;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+  }
+  
+  .wrapper .contactus .fas{
+      position: absolute;
+      color: red;
+      top:  10px;
+      left: 15px;
+      color: #30333A;
+  }
+  
+    #searchbox {
+      width: 300px;
+      border: 2px solid black;
+    }
+    #logo, #searchbox {
+    height: 50px;
+    display: inline-block;
+    }
+    
+    button {
+      height: 50px;
+      margin: 20px;
+      padding: 10px;
+    }
+  
+  /* Style the header */
+  .header {
+    grid-area: header;
+    background-color: rgba(229, 194, 229, 0.829);
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  /* The grid container */
+  .grid-container {
+      background-image: url("black-background-188797.jpg");    
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'middle middle middle middle middle middle' 
+      'footer footer footer footer footer footer';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    padding: 10px;
+    /* height: 300px; Should be removed. Only for demonstration */
+  }
+  
+  div {
+      /* border: solid lightblue; */
+  
+      box-sizing: border-box;
+      margin: 1%;
+      padding: 10px;}
+  
+      h2{
+          text-align: center;
+      }
+  
+  /* Style the left column */
+  /* .left {
+    grid-area: left;
+  } */
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+    /* background-image: url("background.jpg"); */
+  }
+  
+  /* Style the right column */
+  /* .right {
+    grid-area: right;
+  } */
+  
+  .headerone{
+      font-family: "Times New Roman";
+  }
+  .signup-form
+  {
+      text-align: center;
+      margin: 4% auto ;
+      padding: 5px;
+      background:transparent;
+      /* box-shadow: 0 0 3px rgba(0,0,0,0.3); */
+      width:300px;
+  
+  }
+  
+  .input-box
+  {
+      text-align: center;
+      border-radius: 20px;
+      padding:10px;
+      width: 100%;
+      margin: 10px 0;
+      border: 1px solid #999;
+      outline: none;
+  
+  }
+  .button1
+  {
+      color: #ffff;
+      width: 100%;
+      padding: 10px;
+      border-radius:20px;
+      font-size:15px;
+      margin: 10px 0;
+      border: none;
+      outline:none;
+      cursor: pointer;
+  
+  }
+  
+  .sign-btn{
+      background-color: #1c8adb;
+  }
+  .facebook-btn{
+      background-color: #21afde;
+  }
+  /* Style the footer */
+  .footer {
+    grid-area: footer;
+    background-color: rgba(229, 194, 229, 0.829);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product {
+      width: 30%;
+      min-height: 150px;
+      display: inline-block;
+      border-radius: 30px;
+      /* border: 1px solid black; */
+      text-align: center;
+      line-height: 120px;
+      font-weight: 700;
+      font-size: 26px;
+      color: white;
+      box-shadow: 5px 10px 12px  black;
+      
+      
+    }
+    hr {
+        border: 2px solid;
+    }
+  
+    .product1 {
+      width: 30%;
+      min-height: 150px;
+      display: inline-block;
+      /* border-radius: 30px; */
+      /* border: 1px solid black; */
+      text-align: center;
+      line-height: 120px;
+      /* font-weight: 700; */
+      font-size: 26px;
+      color: black;
+      /* box-shadow: 5px 10px 12px  black;    */
+    }
+  
+    .math{
+      background-color: #5B386D;
+    }
+    
+    .music{
+      background-color: #5DA84B;
+    }
+    .art{
+      background-color: #467B95;
+    }
+    
+    .lang{
+      background-color: #5DA84B;
+    }
+    
+    .tech{
+      background-color: #408AFF;
+    }
+    
+    .sport{
+      background-color: #E09F40;
+    }
+    
+    .havard{
+      background-color: brown;
+    }
+    .stc{
+      background-color: navy;
+    }
+    .marvins{
+      background-color: olive;
+    }
+    .msoft{
+      background-color: black;
+    }
+    .hollywood{
+      background-color: gray;
+    }
+    
+    .cfc{
+      background-color: chocolate;
+    }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }
